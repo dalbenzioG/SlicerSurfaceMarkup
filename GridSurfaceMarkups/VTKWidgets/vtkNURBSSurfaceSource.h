@@ -49,6 +49,7 @@
 
 class vtkDoubleArray;
 class vtkIdList;
+class vtkSourceSurface;
 
 //------------------------------------------------------------------------------
 /**
@@ -58,6 +59,7 @@ class vtkIdList;
  */
 class VTK_SLICER_GRIDSURFACEMARKUPS_MODULE_VTKWIDGETS_EXPORT vtkNURBSSurfaceSource : public vtkPolyDataAlgorithm
 {
+ friend vtkSourceSurface;
  public:
   static vtkNURBSSurfaceSource *New();
   vtkTypeMacro(vtkNURBSSurfaceSource, vtkPolyDataAlgorithm);
